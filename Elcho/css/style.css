@@ -1,0 +1,169 @@
+body {
+	font-family: "Montserrat";
+}
+
+/* .wrapper {
+	background: linear-gradient(to right, #ff01d9, #029ddf, #6702ff);
+} */
+
+.wrapper {
+	background: linear-gradient(to right, #029ddf, #68efaf, #ff01d9, #6702ff, #029ddf);
+	animation: gradient 10s infinite linear;
+	background-size: 400%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%
+	}
+
+	100% {
+		background-position: -400%
+	}
+}
+
+.wrap {
+	background: url(../img/pattern.svg);
+	background-attachment: fixed;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* ! Начало */
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 770px;
+}
+
+/* ! header */
+/* .header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+} */
+
+/* #header__scroll {
+	padding: 35px 0;
+
+	transition: .7s;
+}
+
+#header__scroll.small {
+	padding: 15px 0;
+	background: #333333e1;
+} */
+
+.header__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background: lightgreen;
+	border-bottom: 1px solid black;
+}
+
+.header__logo a {
+	text-decoration: none;
+
+	color: black;
+}
+
+.header__logo p {
+	padding: 12px 18px;
+	background: red;
+	border: 1px solid black;
+}
+
+/* .header__nav {} */
+
+.header__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	list-style: none;
+}
+
+.header__list a {
+	list-style: none;
+
+	text-decoration: none;
+	padding: 12px 18px;
+	background: red;
+	border: 1px solid black;
+
+	color: black;
+}
+
+/* ! main */
+/* .main {
+	margin-top: 50px;
+} */
+
+/* ! section */
+/* .block__one {} */
+
+.block__one__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background: purple;
+}
+
+.block__one__buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.button__reset {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+
+	cursor: pointer;
+}
+
+.block__one__button {
+	padding: 20px 35px;
+
+	background: #FFA500;
+	border: 1px solid black;
+}
+
+/* ! grid */
+.block__one__grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-auto-rows: 280px;
+	grid-auto-flow: dense;
+	grid-gap: 30px;
+
+	width: 700px;
+	padding: 40px;
+}
+
+.block__one__grid__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: red;
+}
+
+/* ! footer */
+.footer {
+	margin-top: auto;
+}
