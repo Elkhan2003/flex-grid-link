@@ -24,21 +24,15 @@ body {
 
 .wrap {
 	background: url(../img/pattern.svg);
-	background-attachment: fixed;
-	overflow: hidden;
+	/* background-attachment: fixed;
+	overflow: hidden; */
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	min-height: 100vh;
 }
 
 /* ! Начало */
-.wrapper {
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
 .container {
 	margin: 0 auto;
 	width: 100%;
